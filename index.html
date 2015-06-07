@@ -6,8 +6,8 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Agency - Start Bootstrap Theme</title>
+    <meta name="robots" content="noindex">
+    <title>bellbell,bell,</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,12 +34,12 @@
 </head>
 
 <body id="page-top" class="index">
-
+<div id="wrap">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
+            <div class="navbar-header page-scroll" style="margin:0;">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -59,7 +59,7 @@
                         <a class="page-scroll" href="#news">News</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">PRICE</a>
+                        <a class="page-scroll" href="#services">SERVICE</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">GALLERY</a>
@@ -81,15 +81,22 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header style="overflow-x: hidden;">
         <div class="container">
-            <div class="slider autoplay">
+            <div class="slider autoplay hidden-xs">
                 <img src="img/slider01.jpg" alt="">
                 <img src="img/slider02.jpg" alt="">
                 <img src="img/slider03.jpg" alt="">
             </div>
+            <div class="slider autoplay visible-xs">
+                <img src="img/slider01_sp.jpg" alt="">
+                <img src="img/slider02_sp.jpg" alt="">
+                <img src="img/slider03_sp.jpg" alt="">
+            </div>
             <div class="col-lg-12 text-center">
-                <h4 class="top_description">All options are optional, but columnWidth and itemSelector are recommended.</h4>
+                <p class="top_description">
+                    bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,
+                </p>
             </div>
         </div>
     </header>
@@ -97,40 +104,16 @@
 
     <!-- Services Section -->
     <section id="news" class="bg-light-gray">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">-NEWS-</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">-NEWS-</h2>
+                </div>
             </div>
-        </div>
-        <div id="js-masonry" class="text-center service_items">
-            <div class="news_detail">
-                <h4 class="service-heading">明日はお休みです<span class="news_date">2014/06/1</span></h4>
-                <p class="text-muted text-left">明日はお休みです・・・・。<br>来週は通常どうりです。</p>
-                <a href="" class="news_more">more...</a>
+            <div id="masonry" class="row"></div>
+            <div class="row text-center">
+                <a href="http://kyouheihei.tumblr.com/" class="col-lg-12 tosns">Past news...</a>
             </div>
-            <div class="news_detail">
-                <h4 class="service-heading">発表会があります！<span class="news_date">2014/06/1</span></h4>
-                <p class="text-muted text-left">6月1日に発表会があります！</p>
-                <a href="" class="news_more">more...</a>
-            </div>
-            <div class="news_detail">
-                <h4 class="service-heading">インフルエンザについて<span class="news_date">2014/06/1</span></h4>
-                <p class="text-muted text-left">生徒内で流行り始めると大変なので予防はしっかりとしてください</p>
-                <a href="" class="news_more">more...</a>
-            </div>
-            <div class="news_detail">
-                <h4 class="service-heading">明日はお休みです<span class="news_date">2014/06/1</span></h4>
-                <p class="text-muted text-left">明日はお休みです・・・・。<br>来週は通常どうりです。</p>
-                <a href="" class="news_more">more...</a>
-            </div>
-            <div class="news_detail">
-                <h4 class="service-heading">発表会があります！<span class="news_date">2014/06/1</span></h4>
-                <p class="text-muted text-left">6月1日に発表会があります！6月1日に発表会があります！</p>
-                <a href="" class="news_more">more...</a>
-            </div>
-        </div>
-        <div class="row text-center">
-            <a href="" class="col-lg-12">Past news...</a>
         </div>
     </section>
 
@@ -148,8 +131,8 @@
             <div class="row text-center service_items">
                 <div class="col-md-4 service_detail">
                     <h4 class="service-heading">1Day利用<span class="price">￥30000（税込）</span></h4>
-                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more">詳しくはここをクリック</span>
-                    <div class="servises_text">
+                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more hidden-md hidden-lg glyphicon glyphicon-plus">詳しくはこちら</span>
+                    <div class="servises_text ballet_text">
                         <p class="text-left">
                             あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ<br>
                             あいうえおかきくけこあいうえおかきくけこ<br>
@@ -160,8 +143,8 @@
                 </div>
                 <div class="col-md-4 service_detail">
                     <h4 class="service-heading">2時間利用<span class="price">￥3000（税込）</span></h4>
-                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more">詳しくはこちら</span>
-                    <div class="servises_text">
+                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more hidden-md hidden-lg glyphicon glyphicon-plus">詳しくはこちら</span>
+                    <div class="servises_text ballet_text">
                         <p class="text-left">
                             あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ<br>
                             あいうえおかきくけこあいうえおかきくけこ<br>
@@ -172,8 +155,8 @@
                 </div>
                 <div class="col-md-4 service_detail">
                     <h4 class="service-heading">その他オプション</h4>
-                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more">詳しくはこちら</span>
-                    <div class="servises_text">
+                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more hidden-md hidden-lg glyphicon glyphicon-plus">詳しくはこちら</span>
+                    <div class="servises_text ballet_text">
                         <p class="text-left">
                             あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ<br>
                             あいうえおかきくけこあいうえおかきくけこ<br>
@@ -181,6 +164,9 @@
                             あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ<br>
                         </p>
                     </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <span class="services_more _ballet visible-md visible-lg glyphicon glyphicon-plus">詳しくはこちら</span>
                 </div>
             </div>
             <div class="row">
@@ -191,8 +177,8 @@
             <div class="row text-center service_items">
                 <div class="col-md-4 service_detail">
                     <h4 class="service-heading">1Day利用<span class="price">￥30000（税込）</span></h4>
-                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more">詳しくはここをクリック</span>
-                    <div class="servises_text">
+                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more hidden-md hidden-lg glyphicon glyphicon-plus">詳しくはこちら</span>
+                    <div class="servises_text rentroom_text">
                         <p class="text-left">
                             あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ<br>
                             あいうえおかきくけこあいうえおかきくけこ<br>
@@ -203,8 +189,8 @@
                 </div>
                 <div class="col-md-4 service_detail">
                     <h4 class="service-heading">2時間利用<span class="price">￥3000（税込）</span></h4>
-                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more">詳しくはこちら</span>
-                    <div class="servises_text">
+                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more hidden-md hidden-lg glyphicon glyphicon-plus">詳しくはこちら</span>
+                    <div class="servises_text rentroom_text">
                         <p class="text-left">
                             あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ<br>
                             あいうえおかきくけこあいうえおかきくけこ<br>
@@ -215,8 +201,8 @@
                 </div>
                 <div class="col-md-4 service_detail">
                     <h4 class="service-heading">その他オプション</h4>
-                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more">詳しくはこちら</span>
-                    <div class="servises_text">
+                    <p class="text-muted">テキストテキストテキストテキスト</p><span class="services_more hidden-md hidden-lg glyphicon glyphicon-plus">詳しくはこちら</span>
+                    <div class="servises_text rentroom_text">
                         <p class="text-left">
                             あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ<br>
                             あいうえおかきくけこあいうえおかきくけこ<br>
@@ -224,6 +210,9 @@
                             あいうえおかきくけこあいうえおかきくけこあいうえおかきくけこ<br>
                         </p>
                     </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <span class="services_more _rentroom visible-md visible-lg glyphicon glyphicon-plus">詳しくはこちら</span>
                 </div>
             </div>
         </div>
@@ -237,21 +226,9 @@
                     <h2 class="section-heading">-GALLERY-</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="instagram"></div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-instagram fa-2x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="row text-center">
-                    <a href="" class="col-lg-12">All Photos...</a>
-                </div>
+            <div id="instagram" class="row"></div>
+            <div class="row text-center">
+                <a href="https://instagram.com/warusukanpo/" class="col-lg-12 tosns">All Photos...</a>
             </div>
         </div>
     </section>
@@ -265,71 +242,14 @@
                 </div>
             </div>
             <div class="row">
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-4">
+                <div class="col-sm-8 col-sm-offset-2">
                     <div class="team-member">
                         <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>秋元里奈子</h4>
+                        <h4>bell,bell,</h4>
                         <p class="text-muted">
-                            テキストテキストテキスト<br>
-                            テキストテキストテキストテキストテキスト<br>
-                            テキストテキストテキストテキスト
+                            bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,bell,
                         </p>
                     </div>
-                </div>
-            </div>
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -347,7 +267,7 @@
                 <div id="map-canvas" class="embed-responsive embed-responsive-16by9"></div>
                 <div class="col-lg-8 col-lg-offset-2 text-left map_text">
                     <i class="fa fa-car"></i>
-                    <span class="text-muted">-国立駅北口から徒歩9分近くには駐車場があります</span>
+                    <span class="text-muted">-bell,bell,bell,bell,</span>
                 </div>
             </div>
         </div>
@@ -358,7 +278,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p class="section-subheading text-muted">お気軽にどうぞ</p>
                 </div>
             </div>
             <div class="row">
@@ -401,29 +321,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
-                    </ul>
+                    <span class="copyright">Copyright &copy; Modern Ballet Bell</span>
                 </div>
             </div>
         </div>
     </footer>
+</div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -445,9 +348,9 @@
     <!-- Added JavaScript -->
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/myscript.js"></script>
+    <script src="js/tumblr.js"></script>
     <script src="js/instagram.js"></script>
+    <script src="js/myscript.js"></script>
 
 </body>
 

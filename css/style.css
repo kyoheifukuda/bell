@@ -5,6 +5,7 @@
  */
 
 body {
+    position: relative;
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
@@ -20,7 +21,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.75;
 }
 
@@ -52,7 +53,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p{
+    font-size: 12px;
 }
 
 .img-centered {
@@ -207,7 +210,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 1px;
     color: #000;
     font-size: 12px;
@@ -221,14 +224,10 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
-    background-color: #000;
-}
-
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background: none !important;
+    border-bottom:3px solid #000;
+    padding-bottom: 5px;
 }
 
 @media(min-width:768px) {
@@ -246,10 +245,6 @@ fieldset[disabled] .btn-xl.active {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-    }
-
-    .navbar-default .navbar-nav>.active>a {
-        border-radius: 3px;
     }
 
     .navbar-default.navbar-shrink {
@@ -314,14 +309,14 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 80px 0;
+    padding: 40px 0;
 }
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 25px;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 section h3.section-subheading {
@@ -335,12 +330,12 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 }
 
 .service-heading {
-    margin: 15px 0;
+    margin: 15px 0 0;
     text-transform: none;
 }
 
@@ -629,6 +624,7 @@ section h3.section-subheading {
 .team-member img {
     margin: 0 auto;
     border: 7px solid #fff;
+    width: 220px;
 }
 
 .team-member h4 {
@@ -855,6 +851,17 @@ body {
 }
 
 /*original--------------------------------------------*/
+.navbar{
+    border-top: 3px solid #000;
+}
+
+#wrap {
+    overflow : hidden;
+}
+
+.mt30{
+    margin-top:30px;
+}
 
 .bg_img{
     background-image: url(../img/bg.png);
@@ -875,17 +882,24 @@ body {
     margin-bottom: 40px;
 }
 
-#js-masonry{
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-}
-
 .news_detail{
     padding:30px;
     background-color: #fff;
     border: 10px solid #f7f7f7;
-    width: 320px;
+    display: inline-block;
+}
+
+.news_num {
+    font-size: 11px;
+    margin-right: 5px;
+    color: #fff;
+    background-color: orange;
+    padding: 11px 7px;
+    border-radius: 50px;
+    float: left;
+    margin-top: -33px;
+    margin-left: -33px;
+
 }
 
 .news_date{
@@ -923,12 +937,11 @@ body {
 .service_detail{
     padding:20px;
     background-color: #fff;
-    border: 10px solid #e5e6de;
+    border-bottom: 2px dotted rgba(97, 80, 52, 0.1);
 }
 
 .service-heading{
-    padding-bottom: 20px;
-    border-bottom: 2px dotted rgba(97, 80, 52, 0.1);
+    padding-bottom: 5px;
 }
 
 .services-heading{
@@ -948,4 +961,12 @@ body {
 
 .map_text{
     margin-top: 20px;
+}
+
+.fa-instagram{
+    color: #1c5380;
+}
+
+.tosns{
+    margin-top: 50px;
 }
